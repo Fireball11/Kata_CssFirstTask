@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Barlow Regular";
+}
+
+html {
+  background-color: #eff6ff;
+  color: #2a4a5c;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+article {
+  width: 70%;
+  margin: 10vh auto 0;
+  background-image: url(img/bg.jpg);
+  background-size: contain;
+  border: 1px solid red;
+}
+
+aside {
+  float: left;
+  border: 1px solid red;
+}
+
+aside img {
+  margin: 20px;
+  width: 110px;
+}
+
+main {
+  width: 50%;
+  height: 80vh;
+  float: right;
+  background-color: #fff;
+  border: 1px solid red;
+}
+
+#auth {
+  margin: 80px 40px;
+}
+
+h3 {
+  margin: 20px 0 40px 0;
+  font-size: medium;
+  color: #7b8a92;
+}
+
+#socButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+#socButtons a {
+  padding: 10px;
+}
+
+#socButtons img {
+  width: 15px;
+  margin-right: 20px;
+}
+
+#Facebook {
+  background-color: #255a9b;
+}
+
+#Linkedin {
+  background-color: #0076b6;
+}/*# sourceMappingURL=style.css.map */

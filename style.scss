@@ -1,0 +1,89 @@
+$backgraund-Clr: #eff6ff;
+$textSample-Clr: #2a4a5c;
+$facebookTtn-Clr: #255a9b;
+$linkedinBtn-Clr: #0076b6;
+$createBtn-Clr: #3698fb;
+$firstShadeOfGay: #7b8a92;
+$someSortOfblue: #3698fb;
+$secondShadeOfGay: #afafaf;
+$thirdShadeOfGay: #eee;
+$mainBckgrn-Clr: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Barlow Regular";
+}
+
+html {
+    background-color: $backgraund-Clr;
+    color: $textSample-Clr;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+article {
+    width: 70%;
+    margin: 10vh auto 0;
+    background-image: url(img/bg.jpg);
+    background-size: contain;
+
+    border: 1px solid red;
+}
+
+aside {
+    float: left;
+    border: 1px solid red;
+}
+
+aside img {
+    margin: 20px;
+    width: 110px;
+}
+
+main {
+    width: 50%;
+    height: 80vh;
+    float: right;
+    background-color: $mainBckgrn-Clr;
+    border: 1px solid red;
+}
+
+#auth {
+    margin: 80px 40px;
+}
+
+h3 {
+    margin: 20px 0 40px 0;
+    font-size: medium;
+
+    color: $firstShadeOfGay;
+}
+
+#socButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+#socButtons a {
+    padding: 10px;
+}
+
+#socButtons img {
+    width: 15px;
+    margin-right: 20px;
+}
+
+#Facebook {
+    background-color: $facebookTtn-Clr;
+}
+
+#Linkedin {
+    background-color: $linkedinBtn-Clr;
+}
