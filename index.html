@@ -16,34 +16,34 @@
 
         </aside>
         <main>
-            <div id="content">
-                <div id="auth">
-                    <h1>Get iintoo it today</h1>
-                    <h3>There is no charge of obligation upon registation</h3>
-                    <div id="socButtons">
-                        <a href="#" id="Facebook">
-                            <img src="img/facebook.svg" alt="">
-                            Register with Facebook
-                        </a>
-                        <a href="#" id="Linkedin">
-                            <img src="img/linkedin.svg" alt="">
-                            Register in Linkedin
-                        </a>
-                    </div>
-                    <hr><span>OR</span>
-                    <form action="">
-                        <input type="email" name="">
-                        <input type="text">
-                        <h2>What type of investor are you?</h2>
-                        <h4>Select the type of investor you are below.</h4>
-                        <input type="radio" name="" id="">
-                        <input type="radio" name="" id="">
-                        <input type="radio" name="" id="">
-                        <input type="radio" name="" id="">
-                        <div></div>
-                        <input type="checkbox" name="" id="">
-                    </form>
+            <div id="auth">
+                <h1>Get iintoo it today</h1>
+                <h3>There is no charge of obligation upon registation</h3>
+                <div id="socButtons" class="gridThings">
+                    <a href="#" id="Facebook">
+                        <img src="img/facebook.svg" alt=""><span>Register with Facebook</span>
+                    </a>
+                    <a href="#" id="Linkedin">
+                        <img src="img/linkedin.svg" alt=""><span>Register in Linkedin</span>
+                    </a>
                 </div>
+                <hr size="1"><span>OR</span>
+                <form action="">
+                    <label for="email">EMail</label>
+                    <label for="tel">Phone</label>
+                    <div class="gridThings">
+                        <input type="email" name="" class="textInput" id="email">
+                        <input type="tel" minlength="11" class="textInput" id="tel">
+                    </div>
+                    <h2>What type of investor are you?</h2>
+                    <h4>Select the type of investor you are below.</h4>
+                    <input type="radio" name="investor" id="" value="individual">
+                    <input type="radio" name="investor" id="" value="business">
+                    <input type="radio" name="investor" id="" value="ira">
+                    <input type="radio" name="investor" id="" value="trust">
+                    <input type="checkbox" name="" id="">
+                    <input type="submit" value="">
+                </form>
             </div>
         </main>
     </article>

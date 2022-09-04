@@ -4,7 +4,7 @@ $facebookTtn-Clr: #255a9b;
 $linkedinBtn-Clr: #0076b6;
 $createBtn-Clr: #3698fb;
 $firstShadeOfGay: #7b8a92;
-$someSortOfblue: #3698fb;
+$active-Clr: #3698fb;
 $secondShadeOfGay: #afafaf;
 $thirdShadeOfGay: #eee;
 $mainBckgrn-Clr: #fff;
@@ -14,7 +14,7 @@ $mainBckgrn-Clr: #fff;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
-    font-family: "Barlow Regular";
+    font-family: "Barlow Light";
 }
 
 html {
@@ -55,7 +55,7 @@ main {
 }
 
 #auth {
-    margin: 80px 40px;
+    margin: 80px 60px;
 }
 
 h3 {
@@ -65,20 +65,30 @@ h3 {
     color: $firstShadeOfGay;
 }
 
-#socButtons {
+
+.gridThings {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 40px;
+
+    margin-bottom: 40px;
 }
 
 #socButtons a {
     padding: 10px;
 }
 
-#socButtons img {
-    width: 15px;
-    margin-right: 20px;
+#socButtons span {
+    font-size: 14px;
+    vertical-align: 2px;
+    color: $thirdShadeOfGay;
 }
+
+#socButtons img {
+    width: 20px;
+    margin-right: 15px;
+}
+
 
 #Facebook {
     background-color: $facebookTtn-Clr;
@@ -87,3 +97,42 @@ h3 {
 #Linkedin {
     background-color: $linkedinBtn-Clr;
 }
+
+
+#auth hr {
+    width: 25vh;
+    margin: 0 auto;
+    color: $thirdShadeOfGay;
+}
+
+#auth > span {
+    font-size: 14px;
+    width: max-content;
+    position: relative;
+    left: 48%;
+    top: -10px;
+    padding: 0 5px;
+    display: block;
+    background-color: $mainBckgrn-Clr;
+}
+
+form {
+    margin-top: 40px;
+}
+
+label[for="email"] {
+    position: relative;
+
+}
+
+
+.textInput {
+    border: 1px solid $thirdShadeOfGay;
+    border-radius: 0 3px 3px 0;
+}
+
+.textInput:focus-visible {
+    border: none;
+    border-left: 1px solid $active-Clr;
+}
+
