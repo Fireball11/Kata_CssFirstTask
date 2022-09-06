@@ -1,9 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   overflow: hidden;
   font-family: "Barlow Light";
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 html {
@@ -21,12 +24,10 @@ article {
   margin: 10vh auto 0;
   background-image: url(img/bg.jpg);
   background-size: contain;
-  border: 1px solid red;
 }
 
 aside {
   float: left;
-  border: 1px solid red;
 }
 
 aside img {
@@ -39,7 +40,6 @@ main {
   height: 80vh;
   float: right;
   background-color: #fff;
-  border: 1px solid red;
 }
 
 #auth {
@@ -109,7 +109,13 @@ label[for=email] {
   position: relative;
 }
 
+.textInput-field {
+  margin-bottom: 1rem;
+  background-clip: padding-box;
+}
+
 .textInput {
+  height: calc(2.25rem + 2px);
   border: 1px solid #eee;
   border-radius: 0 3px 3px 0;
 }
@@ -117,4 +123,5 @@ label[for=email] {
 .textInput:focus-visible {
   border: none;
   border-left: 1px solid #3698fb;
+  outline: none;
 }/*# sourceMappingURL=style.css.map */
